@@ -1,0 +1,40 @@
+Commandes pour la config de Git :
+Philippe lin@DESKTOP-JDG22M9 MINGW64 ~
+$ git config --global user.name "philippelin"
+
+Philippe lin@DESKTOP-JDG22M9 MINGW64 ~
+$ git config  --global user.email "philippelin@gmail.com"
+
+Philippe lin@DESKTOP-JDG22M9 MINGW64 ~
+$ cd Documents/GitRepository
+
+Philippe lin@DESKTOP-JDG22M9 MINGW64 ~/Documents/GitRepository
+$ ls
+
+Philippe lin@DESKTOP-JDG22M9 MINGW64 ~/Documents/GitRepository
+$ mkdir monprojet
+
+Philippe lin@DESKTOP-JDG22M9 MINGW64 ~/Documents/GitRepository
+$ cd monprojet
+
+Philippe lin@DESKTOP-JDG22M9 MINGW64 ~/Documents/GitRepository/monprojet
+$ git init
+Initialized empty Git repository in C:/Users/Phil/Documents/GitRepository/monprojet/.git/
+-------------------------------------------------------------------------------------------------
+
+un fichier a trois états :
+
+etat de modification;
+etat dit "stage"(EN) le fichier a été modifié et est près a etre sauvegardé;
+etat dit "commit" le fichier est terminé et on veut l'enregistré;
+
+Pour ajouter le fichier on utilise la commande : 
+git add `nomDuFichier` (on l'a mit dans la "stageArea")
+
+Ensuite on peut  le "commit" c-a-d le sauvegardé(éventuellement avec un message) avec la commande :
+git commit [-m "leMessageDeDescription"]
+
+On peut aussi ajouter et commit un fichier en meme temps : git commit -a -m "message"
+
+On peut avoir un historique des changements(sauvegardes) faits avec : git log
+Pour voir les fichiers qui n'ont pas été sauvegardés on peut utiliser la commande : git status
